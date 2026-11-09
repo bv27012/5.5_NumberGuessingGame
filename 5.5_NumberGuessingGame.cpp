@@ -33,4 +33,6 @@ int main()
 		cout << "Correct! Good job!" << endl;
 		cout << "Guesses made: " << guessCount << endl;
 	}
+
+return 0;
 }
