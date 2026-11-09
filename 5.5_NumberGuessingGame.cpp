@@ -17,5 +17,20 @@ int main()
 	{
 		cout << "Welcome to the number guessing game!" << endl << endl << "Enter a number from 1-10:" << endl;
 		cin >> userGuess;
+		guessCount++;
 	} while(userGuess != randomNum);
+
+	if (userGuess > randomNum)
+	{
+		cout << "Too high!" << endl << endl;
+	}
+	else if (userGuess < randomNum)
+	{
+		cout << "Too low!" << endl << endl;
+	}
+	else
+	{
+		cout << "Correct! Good job!" << endl;
+		cout << "Guesses made: " << guessCount << endl;
+	}
 }
